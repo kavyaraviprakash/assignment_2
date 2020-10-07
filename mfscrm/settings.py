@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'mathfilters',
     'django.contrib.humanize',
     'crispy_forms',
-    'import_export'
 
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
