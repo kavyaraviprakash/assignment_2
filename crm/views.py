@@ -1,9 +1,7 @@
 import csv
 
-from django.http import HttpResponse
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.shortcuts import render
 from django.shortcuts import redirect
 from .models import *
@@ -12,7 +10,7 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.db.models import Sum
 from .forms import RegisterForm
 from django.http import HttpResponse
-from django.contrib.auth.models import User
+
 
 now = timezone.now()
 
