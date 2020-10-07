@@ -1,7 +1,6 @@
 from django.contrib import admin
 
 from .models import Customer, Service, Product
-from import_export.admin import ImportExportModelAdmin
 
 
 class CustomerList(admin.ModelAdmin):
@@ -28,7 +27,3 @@ class ProductList(admin.ModelAdmin):
 admin.site.register(Customer, CustomerList)
 admin.site.register(Service, ServiceList)
 admin.site.register(Product, ProductList)
-
-
-class ViewAdmin(ImportExportModelAdmin):
-    pass
